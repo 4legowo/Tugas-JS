@@ -1,0 +1,97 @@
+.body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    margin: auto;
+    background: white;
+    padding: 20;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.input-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+
+.h1 {
+    text-align: center;
+    color: #333;
+}
+
+#shopping-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#shopping-form input, #shopping-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+#shopping-form button {
+    background-color: #231961;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 0.5;
+}
+
+.clear-button {
+    background-color: #09e74b;
+}
+
+#shopping-form button:hover {
+    background-color: #1c0742;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+
+.total-section {
+    text-align: right;
+    font-size: 1.2em;
+    padding-top: 10px;
+    border-top: 2px solid #333;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Belanja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Belanja</h1>
+        <form id="shopping-form">
+                <input type="date" id="date" required>
+           <div class="input-container">
+               <input type="number" id="item-nomer" placeholder="No"required>
+               <input type="text" id="item-name" placeholder="Nama Barang" required>
+               <input type="text" id="item-unit" placeholder="Satuan (ex: pcs)" required>
+               <input type="number" id="item-price" placeholder="Harga Satuan" required min="0">
+               <button id="clearButton" class="clear-button">X</button>
+            </div> 
+            <input type="number" id="item-quantity" placeholder="Jumlah" required min="1">
+            <button type="submit">Tambah</button>
+        </form>
+        
+        <table id="shopping-list">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tanggal</th>
+                    <th>Jenis Barang</th>
+                    <th>Satuan</th>
+                    <th>Harga Satuan (Rp)</th>
+                    <th>Jumlah</th>
+                    <th>Total (Rp)</th>
+                </tr>
+            </thead>
+            <tbody id="item-list">
+            </tbody>
+        </table>
+        
+        <div class="total-section">
+            <strong>Total Keseluruhan:</strong>
+            <span id="grand-total">0</span> Rp
+            <button type="submit">Hapus semua</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
